@@ -51,7 +51,7 @@ QPixmap ItemsWidget::GetPreview() const {
   QPainter painter(&pixmap);
   painter.setPen(item->pen());
   painter.setBrush(item->brush());
-  painter.drawRect(item->boundingRect());
+  painter.drawPath(item->shape());
 
   return pixmap;
 }
