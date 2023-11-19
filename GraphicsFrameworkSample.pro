@@ -28,6 +28,8 @@ HEADERS += \
 FORMS += \
     src/mainwindow/mainwindow.ui
 
+INCLUDEPATH += $$PWD/src/itemswidget
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

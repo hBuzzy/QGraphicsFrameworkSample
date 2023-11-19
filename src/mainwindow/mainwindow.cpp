@@ -106,6 +106,8 @@ void MainWindow::SetUi() {
 
   // Заполняем пол объектов (Класс ItemsWidget).
   AddItemToList(ItemsFactory::ItemsType::kBorder);
+
+  // kCoin не реализован в ItemsFactory -> будет выводиться фигура по умолчанию
   AddItemToList(ItemsFactory::ItemsType::kCoin);
 }
 

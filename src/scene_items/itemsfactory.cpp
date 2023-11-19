@@ -9,6 +9,7 @@ SceneItem *ItemsFactory::Create(ItemsType type) {
     return new SceneItem(QRectF(0, 0, 70, 40), QPen(Qt::black, 1),
                          QBrush(Qt::green, Qt::SolidPattern));
   } else {
-    return new SceneItem(QRectF(0, 0, 20, 20), QPen(), QBrush());
+    return new SceneItem(QRectF(0, 0, 20, 20), QPen(),
+                         QBrush(Qt::BDiagPattern));
   }
 }

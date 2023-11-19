@@ -32,7 +32,7 @@ void ItemsWidget::mouseMoveEvent(QMouseEvent *event) {
   dataStream << dragableItem_->GetType();
 
   QMimeData *mimeData = new QMimeData;
-  mimeData->setData(DragItem::kMimeFormat, itemData);
+  mimeData->setData(dragableItem_->kMimeFormat, itemData);
 
   QDrag *drag = new QDrag(this);
   drag->setMimeData(mimeData);
